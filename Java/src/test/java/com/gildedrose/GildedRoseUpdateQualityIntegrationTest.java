@@ -5,7 +5,7 @@ import org.junit.Test;
 import static com.gildedrose.ItemBuilder.anItem;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class GildedRoseUpdateQualityTest {
+public class GildedRoseUpdateQualityIntegrationTest {
 
     @Test
     public void doesNotChangeTheName() {
