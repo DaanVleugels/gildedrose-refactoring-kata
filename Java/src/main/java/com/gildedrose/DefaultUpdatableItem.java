@@ -15,11 +15,13 @@ class DefaultUpdatableItem implements UpdatableItem {
     @Override
     public void updateQuality() {
         quality = new DefaultQuality(quality.getValue() - 1);
-        sellIn = new SellIn(sellIn.getValue() - 1);
+        sellIn = sellIn.update();
     }
 
     @Override
     public Item asItem() {
-        return new Item(name.getValue(), quality.getValue(), sellIn.getValue());
+        Item item = new Item(name.getValue(), sellIn.getValue(), quality.getValue());
+        System.err.println(item);
+        return item;
     }
 }

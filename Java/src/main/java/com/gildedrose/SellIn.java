@@ -11,4 +11,8 @@ class SellIn {
     int getValue() {
         return value;
     }
+
+    SellIn update() {
+        return new SellIn(value - 1);
+    }
 }

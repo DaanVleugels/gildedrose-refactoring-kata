@@ -1,13 +1,25 @@
 package com.gildedrose;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 class GildedRose {
+    private final UpdatableItemFactory updatableItemFactory;
     Item[] items;
 
     public GildedRose(Item[] items) {
+
+        this.updatableItemFactory = new UpdatableItemFactory();
         this.items = items;
     }
 
     public void updateQuality() {
+//        List<UpdatableItem> updatableItems = Arrays.stream(items).map(updatableItemFactory::create).collect(Collectors.toList());
+//
+//        updatableItems.forEach(UpdatableItem::updateQuality);
+//        items = updatableItems.stream().map(UpdatableItem::asItem).toArray(Item[]::new);
+
         for (int i = 0; i < items.length; i++) {
             if (!items[i].name.equals("Aged Brie")
                     && !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
