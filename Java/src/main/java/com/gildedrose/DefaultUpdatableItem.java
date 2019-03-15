@@ -20,8 +20,6 @@ class DefaultUpdatableItem implements UpdatableItem {
 
     @Override
     public Item asItem() {
-        Item item = new Item(name.getValue(), sellIn.getValue(), quality.getValue());
-        System.err.println(item);
-        return item;
+        return new Item(name.getValue(), sellIn.getValue(), quality.getValue());
     }
 }
