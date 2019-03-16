@@ -10,7 +10,7 @@ public class DefaultQuality implements Quality {
     private final int value;
 
     public DefaultQuality(int quality) {
-        if (quality > 50) {
+        if (quality > MAX_QUALITY) {
             throw new RuntimeException("quality cannot be greater than " + MAX_QUALITY);
         }
         this.value = quality;
