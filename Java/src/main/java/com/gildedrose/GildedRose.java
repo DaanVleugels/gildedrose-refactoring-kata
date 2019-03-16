@@ -9,7 +9,6 @@ class GildedRose {
     Item[] items;
 
     public GildedRose(Item[] items) {
-
         this.updatableItemFactory = new UpdatableItemFactory();
         this.items = items;
     }
