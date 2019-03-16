@@ -1,4 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.item;
+
+import com.gildedrose.Item;
 
 public class UpdatableItemFactory {
     public UpdatableItem create(Item item) {
@@ -7,6 +9,9 @@ public class UpdatableItemFactory {
         }
         if("Aged Brie".equals(item.name)) {
             return new ImprovingUpdatableItem(item);
+        }
+        if(item.name.startsWith("Conjured ")) {
+            return new ConjuredUpdatableItem(item);
         }
         return new DefaultUpdatableItem(item);
     }

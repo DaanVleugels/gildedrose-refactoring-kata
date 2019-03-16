@@ -2,20 +2,20 @@ package com.gildedrose.quality;
 
 import com.gildedrose.sellin.SellIn;
 
-public class LegendaryQuality implements Quality {
+public class ConjuredQuality implements Quality {
+    private final int value;
 
-    private int value;
-
-    public LegendaryQuality(int quality) {
+    public ConjuredQuality(int quality) {
         this.value = quality;
     }
 
+    @Override
     public int getValue() {
         return value;
     }
 
     @Override
     public Quality update(SellIn sellIn) {
-        return this;
+        return new ConjuredQuality(value - 2);
     }
 }

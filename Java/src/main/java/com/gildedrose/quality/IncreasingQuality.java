@@ -23,6 +23,9 @@ public class IncreasingQuality implements Quality {
         if (value == MAX_QUALITY) {
             return this;
         }
+        if(sellIn.getValue() <= 0) {
+            return new IncreasingQuality(value + 2);
+        }
         return new IncreasingQuality(value + 1);
     }
 }

@@ -1,17 +1,17 @@
 package com.gildedrose;
 
-class Name {
+public class Name {
 
     private final String value;
 
-    Name(String name) {
+    public Name(String name) {
         if(name == null) {
             throw new RuntimeException("name cannot be null");
         }
         this.value = name;
     }
 
-    String getValue() {
+    public String getValue() {
         return value;
     }
 }

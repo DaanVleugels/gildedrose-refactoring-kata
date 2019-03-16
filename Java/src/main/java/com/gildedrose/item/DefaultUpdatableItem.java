@@ -1,5 +1,7 @@
-package com.gildedrose;
+package com.gildedrose.item;
 
+import com.gildedrose.Item;
+import com.gildedrose.Name;
 import com.gildedrose.quality.DefaultQuality;
 import com.gildedrose.quality.Quality;
 import com.gildedrose.sellin.DefaultSellIn;

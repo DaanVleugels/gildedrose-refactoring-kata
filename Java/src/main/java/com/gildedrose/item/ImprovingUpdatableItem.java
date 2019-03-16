@@ -1,25 +1,29 @@
-package com.gildedrose;
+package com.gildedrose.item;
 
-import com.gildedrose.quality.LegendaryQuality;
+import com.gildedrose.Item;
+import com.gildedrose.Name;
+import com.gildedrose.quality.IncreasingQuality;
 import com.gildedrose.quality.Quality;
 import com.gildedrose.sellin.DefaultSellIn;
 import com.gildedrose.sellin.SellIn;
 
-public class LegendaryUpdatableItem implements UpdatableItem {
+public class ImprovingUpdatableItem implements UpdatableItem {
 
     private Name name;
     private SellIn sellIn;
     private Quality quality;
 
-    public LegendaryUpdatableItem(Item item) {
+    public ImprovingUpdatableItem(Item item) {
         name = new Name(item.name);
         sellIn = new DefaultSellIn(item.sellIn);
-        quality = new LegendaryQuality();
+        quality = new IncreasingQuality(item.quality);
     }
 
     @Override
     public void updateQuality() {
-        this.sellIn = sellIn.update();
+        this.sellIn = this.sellIn.update();
+        this.quality = this.quality.update(sellIn);
+
     }
 
     @Override
