@@ -29,7 +29,27 @@ public final class ItemBuilder {
         return this;
     }
 
+    public ItemBuilder legendary() {
+        this.name = "Sulfuras, Hand of Ragnaros";
+        return this;
+    }
+
+    public ItemBuilder agedBrie() {
+        withName("Aged Brie");
+        return this;
+    }
+
+    public ItemBuilder backStagePass() {
+        withName("Backstage passes to a TAFKAL80ETC concert");
+        return this;
+    }
+
     public Item build() {
         return new Item(name, sellIn, quality);
+    }
+
+    public ItemBuilder conjured() {
+        withName("Conjured " + name);
+        return this;
     }
 }
