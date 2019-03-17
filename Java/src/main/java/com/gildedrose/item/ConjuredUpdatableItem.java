@@ -1,7 +1,7 @@
 package com.gildedrose.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.quality.ConjuredQuality;
+import com.gildedrose.item.quality.ConjuredQuality;
 
 class ConjuredUpdatableItem extends UpdatableItem {
 

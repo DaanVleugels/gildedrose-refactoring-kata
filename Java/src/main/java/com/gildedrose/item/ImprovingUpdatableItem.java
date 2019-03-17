@@ -1,8 +1,8 @@
 package com.gildedrose.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.quality.IncreasingQuality;
-import com.gildedrose.sellin.DefaultSellIn;
+import com.gildedrose.item.quality.IncreasingQuality;
+import com.gildedrose.item.sellin.DefaultSellIn;
 
 class ImprovingUpdatableItem extends UpdatableItem {
 

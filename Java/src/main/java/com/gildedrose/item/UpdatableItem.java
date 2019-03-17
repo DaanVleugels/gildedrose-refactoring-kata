@@ -1,11 +1,11 @@
 package com.gildedrose.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.name.Name;
-import com.gildedrose.quality.DefaultQuality;
-import com.gildedrose.quality.Quality;
-import com.gildedrose.sellin.DefaultSellIn;
-import com.gildedrose.sellin.SellIn;
+import com.gildedrose.item.name.Name;
+import com.gildedrose.item.quality.DefaultQuality;
+import com.gildedrose.item.quality.Quality;
+import com.gildedrose.item.sellin.DefaultSellIn;
+import com.gildedrose.item.sellin.SellIn;
 
 public abstract class UpdatableItem {
 

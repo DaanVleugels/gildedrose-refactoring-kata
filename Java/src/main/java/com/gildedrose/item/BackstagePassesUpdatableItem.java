@@ -1,7 +1,7 @@
 package com.gildedrose.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.quality.BackstagePassesQuality;
+import com.gildedrose.item.quality.BackstagePassesQuality;
 
 class BackstagePassesUpdatableItem extends UpdatableItem {
     BackstagePassesUpdatableItem(Item item) {

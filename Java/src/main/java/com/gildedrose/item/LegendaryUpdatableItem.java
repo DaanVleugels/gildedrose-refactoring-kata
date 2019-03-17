@@ -1,8 +1,8 @@
 package com.gildedrose.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.quality.LegendaryQuality;
-import com.gildedrose.sellin.LegendarySellIn;
+import com.gildedrose.item.quality.LegendaryQuality;
+import com.gildedrose.item.sellin.LegendarySellIn;
 
 class LegendaryUpdatableItem extends UpdatableItem {
 
