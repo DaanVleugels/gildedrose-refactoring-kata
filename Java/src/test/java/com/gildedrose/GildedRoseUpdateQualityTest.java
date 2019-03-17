@@ -5,7 +5,7 @@ import org.junit.Test;
 import static com.gildedrose.ItemBuilder.anItem;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class GildedRoseUpdateQualityIntegrationTest {
+public class GildedRoseUpdateQualityTest {
 
     private static final int MAXIMUM_QUALITY = 50;
     private static final int MINIMUM_QUALITY = 0;

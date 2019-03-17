@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 class GildedRose {
-    private final UpdatableItemFactory updatableItemFactory;
+    private UpdatableItemFactory updatableItemFactory;
     Item[] items;
 
     public GildedRose(Item[] items) {

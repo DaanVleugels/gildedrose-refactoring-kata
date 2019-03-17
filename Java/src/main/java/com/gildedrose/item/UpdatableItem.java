@@ -1,7 +1,7 @@
 package com.gildedrose.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.Name;
+import com.gildedrose.name.Name;
 import com.gildedrose.quality.DefaultQuality;
 import com.gildedrose.quality.Quality;
 import com.gildedrose.sellin.DefaultSellIn;
@@ -13,7 +13,7 @@ public abstract class UpdatableItem {
     protected SellIn sellIn;
     protected Quality quality;
 
-    protected UpdatableItem(Item item) {
+    UpdatableItem(Item item) {
         this.name = new Name(item.name);
         this.sellIn = new DefaultSellIn(item.sellIn);
         this.quality = new DefaultQuality(item.quality);
