@@ -8,7 +8,7 @@ public class DefaultQuality implements Quality {
     private static final int MAXIMUM_VALUE = 50;
     private static final int MINIMUM_VALUE = 0;
 
-    int value;
+    final int value;
 
     public DefaultQuality(int quality) {
         value = calculateValidQuality(quality);
