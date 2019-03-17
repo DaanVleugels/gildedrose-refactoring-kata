@@ -5,8 +5,8 @@ import com.gildedrose.sellin.SellIn;
 
 public class DefaultQuality implements Quality {
 
-    private static final int MAX_QUALITY = 50;
-    private static final int MIN_QUALITY = 0;
+    private static final int MAXIMUM_VALUE = 50;
+    private static final int MINIMUM_VALUE = 0;
 
     int value;
 
@@ -27,11 +27,11 @@ public class DefaultQuality implements Quality {
 
     int calculateValidQuality(int quality) {
         int value = quality;
-        if (quality > MAX_QUALITY) {
-            value = MAX_QUALITY;
+        if (quality > MAXIMUM_VALUE) {
+            value = MAXIMUM_VALUE;
         }
-        if (quality < MIN_QUALITY) {
-            value = MIN_QUALITY;
+        if (quality < MINIMUM_VALUE) {
+            value = MINIMUM_VALUE;
         }
         return value;
     }
