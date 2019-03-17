@@ -10,6 +10,7 @@ public class LegendaryQualityUpdateTest {
     @Test
     public void returnsSelf() {
         LegendaryQuality legendaryQuality = new LegendaryQuality(42);
+
         assertThat(legendaryQuality.update(new DefaultSellIn(42))).isEqualTo(legendaryQuality);
     }
 
