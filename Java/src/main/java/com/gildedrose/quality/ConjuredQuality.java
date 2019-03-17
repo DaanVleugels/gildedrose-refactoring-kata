@@ -2,16 +2,10 @@ package com.gildedrose.quality;
 
 import com.gildedrose.sellin.SellIn;
 
-public class ConjuredQuality implements Quality {
-    private final int value;
+public class ConjuredQuality extends DefaultQuality {
 
     public ConjuredQuality(int quality) {
-        this.value = quality;
-    }
-
-    @Override
-    public int getValue() {
-        return value;
+        super(quality);
     }
 
     @Override

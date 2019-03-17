@@ -7,5 +7,4 @@ public interface Quality {
     int getValue();
 
     Quality update(SellIn sellIn);
-
 }
