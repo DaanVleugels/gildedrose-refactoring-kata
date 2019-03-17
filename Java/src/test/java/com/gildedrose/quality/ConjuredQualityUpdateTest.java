@@ -21,15 +21,15 @@ public class ConjuredQualityUpdateTest {
     public void returnsPassedSellInQualityWithValueTwoLowerWhenSellInIsZero() {
         Quality updatedQuality = new ConjuredQuality(QUALITY).update(new DefaultSellIn(0));
 
-        assertThat(updatedQuality).isInstanceOf(ConjuredPassedSellInQuality.class);
+        assertThat(updatedQuality).isInstanceOf(ConjuredQuality.class);
         assertThat(updatedQuality.getValue()).isEqualTo(QUALITY - 4);
     }
 
     @Test
     public void returnsPassedSellInQualityWithValueTwoLowerWhenSellInIsNegative() {
-        Quality updatedQuality = new ConjuredQuality(ConjuredQualityUpdateTest.QUALITY).update(new DefaultSellIn(-1));
+        Quality updatedQuality = new ConjuredQuality(QUALITY).update(new DefaultSellIn(-1));
 
-        assertThat(updatedQuality).isInstanceOf(ConjuredPassedSellInQuality.class);
+        assertThat(updatedQuality).isInstanceOf(ConjuredQuality.class);
         assertThat(updatedQuality.getValue()).isEqualTo(QUALITY - 4);
     }
 

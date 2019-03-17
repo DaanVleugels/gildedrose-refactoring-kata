@@ -13,7 +13,7 @@ public class UpdatableItemFactory {
         if(item.name.startsWith("Conjured ")) {
             return new ConjuredUpdatableItem(item);
         }
-        if("Backstage passes to a TAFKAL80ETC concert".equals(item.name)) {
+        if(item.name.startsWith("Backstage passes to ")) {
             return new BackstagePassesUpdatableItem(item);
         }
         return new DefaultUpdatableItem(item);

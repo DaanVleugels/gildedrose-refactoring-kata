@@ -18,18 +18,18 @@ public class DefaultQualityUpdateTest {
     }
 
     @Test
-    public void returnsPassedSellInQualityWithValueTwoLowerWhenSellInIsZero() {
+    public void returnsDefaultQualityWithValueTwoLowerWhenSellInIsZero() {
         Quality updatedQuality = new DefaultQuality(QUALITY).update(new DefaultSellIn(0));
 
-        assertThat(updatedQuality).isInstanceOf(PassedSellInQuality.class);
+        assertThat(updatedQuality).isInstanceOf(DefaultQuality.class);
         assertThat(updatedQuality.getValue()).isEqualTo(QUALITY - 2);
     }
 
     @Test
-    public void returnsPassedSellInQualityWithValueTwoLowerWhenSellInIsNegative() {
-        Quality updatedQuality = new DefaultQuality(DefaultQualityUpdateTest.QUALITY).update(new DefaultSellIn(-1));
+    public void returnsDefaultQualityWithValueTwoLowerWhenSellInIsNegative() {
+        Quality updatedQuality = new DefaultQuality(QUALITY).update(new DefaultSellIn(-1));
 
-        assertThat(updatedQuality).isInstanceOf(PassedSellInQuality.class);
+        assertThat(updatedQuality).isInstanceOf(DefaultQuality.class);
         assertThat(updatedQuality.getValue()).isEqualTo(QUALITY - 2);
     }
 

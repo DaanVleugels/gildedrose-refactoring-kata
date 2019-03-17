@@ -19,7 +19,7 @@ public class IncreasingQualityUpdateTest {
 
     @Test
     public void returnsPassedSellInQualityWithValueTwoHigherWhenSellInIsNegative() {
-        Quality updatedQuality = new IncreasingQuality(IncreasingQualityUpdateTest.QUALITY).update(new DefaultSellIn(-1));
+        Quality updatedQuality = new IncreasingQuality(QUALITY).update(new DefaultSellIn(-1));
 
         assertThat(updatedQuality).isInstanceOf(IncreasingQuality.class);
         assertThat(updatedQuality.getValue()).isEqualTo(QUALITY + 2);

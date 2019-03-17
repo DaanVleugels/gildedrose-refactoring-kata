@@ -20,7 +20,7 @@ public class DefaultQuality implements Quality {
 
     public Quality update(SellIn sellIn) {
         if (sellIn.getValue() <= 0) {
-            return new PassedSellInQuality(value - 2);
+            return new DefaultQuality(value - 2);
         }
         return new DefaultQuality(value - 1);
     }
