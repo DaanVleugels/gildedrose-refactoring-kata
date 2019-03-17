@@ -9,6 +9,7 @@ public class LegendarySellInUpdateTest {
     @Test
     public void returnsTheSameObject() {
         LegendarySellIn legendarySellIn = new LegendarySellIn(42);
+
         assertThat(legendarySellIn.update()).isEqualTo(legendarySellIn);
     }
 
